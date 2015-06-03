@@ -1,0 +1,50 @@
+<div class="container col-md-12">
+  <center><h1>Free Write</h1></center>
+</div>
+
+<div ng-controller="HomeCtrl" class="container">
+  <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Quotes</button>
+  <div collapse="isCollapsed">
+    <div class="well col-md-6 col-md-offset-3">{{quotesList}}</div>
+  </div>
+</div>
+<br>
+<br>
+
+
+        <!---  ============== Look Up Word Feature ============= -->
+<div class="col-md-6 col-md-offset-3">
+  <div ng-controller="WordCtrl" class="input-group search-bar">
+    <form ng-submit="load()" class="navbar-form navbar-right">
+      <input type="text" ng-model="wordSearch" class="form-control" placeholder="Search...">
+      <div dropdown dropdown-append-to-body>
+        <button type="button" class="btn btn-info dropdown-toggle" dropdown-toggle>
+          Look Up Word<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Definition</a></li>
+          <li><a href="#">Synonyms</a></li>
+          <li><a href="#">Antonyms</a></li>
+          <li><a href="#">Rhymes</a></li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>
+<br><br><br><br><br><br>
+<div ng-controller="WordCtrl"class="container well">
+{{$scope.yourData}}
+</div>
+
+<div class="container col-md-12">
+
+  <form action="" method="POST" role="form">
+    <div class="form-group">
+      <label for="">Date</label>
+      <textarea type="text" class="form-control" id="FreeWrite" placeholder="All of this happened, more or less.."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+
+</div>
