@@ -1,4 +1,4 @@
-WritersApp.factory('UserService',['$http',function($http){
+WritersApp.factory('WriterService',['$http',function($http){
 
 return{
   words: function(input){

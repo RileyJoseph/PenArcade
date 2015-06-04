@@ -1,9 +1,8 @@
-WritersApp.controller('AuthLoginModalCtrl',['$scope','UserService','$modalInstance',function($scope,UserService,$modalInstance){
+WritersApp.controller('AuthLoginModalCtrl',['$scope','UserService','$modalInstance','$http',function($scope,UserService,$modalInstance,$http){
 
-  console.log('AuthLoginModalCtrl loaded!! woah!')
+  console.log('AuthLoginModalCtrl loaded!! woah!', UserService)
+
 $scope.login = function(){
-//   alert('you done it!' +" "+ $scope.email + ' ' + $scope.password)
-// console.log(UserService)
 
   UserService.login($scope.email,$scope.password, function(err,data){
     if(err){

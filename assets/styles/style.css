@@ -3,9 +3,23 @@ body{
 }
 
 .intro-text{
-  padding-top: 40vh
+  padding-top: 10vh
 }
 
+
+.navbar{
+  border-bottom: 4px solid #10a1ff;
+}
+
+body{
+  background-color: #f0f0f0;
+/*  background-image: url(../images/Typewriter2.jpg);
+  height: vh100;
+  background-position: top center;
+  background-repeat: none;
+  background-size: cover;*/
+}
+/*
 #btn{
   margin-left: 20px;
   margin-right: 20px;
@@ -16,10 +30,9 @@ body{
   margin-left: 20px;
   margin-right: 20px;
   width: 100px;
-}
+}*/
 
 
 #FreeWrite{
-height: 100vh;
-
+  height: 100vh;
 }

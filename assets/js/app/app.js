@@ -41,6 +41,10 @@ WritersApp.config(['$routeProvider','$locationProvider',function($routeProvider,
       templateUrl: '/views/kickStart/prompts.html',
       controller:  'ToolsCtrl'
     })
+    .when('/saved', {
+      templateUrl: '/views/saved/index.html',
+      controller:  'HomeCtrl'
+    })
 
 
 }]);

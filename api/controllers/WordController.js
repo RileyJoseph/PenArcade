@@ -12,7 +12,7 @@ module.exports = {
   request({
       url:'https://wordsapiv1.p.mashape.com/words/' + req.query.word + '/definition',
       headers: {
-        "X-Mashape-Key":'PgjVvStbFPmshgWnVHGhxFstEqo4p1ROrvTjsno0NVJhCLU7g2'
+        "X-Mashape-Key": process.env.API_KEY
       }
     },function(error, response, data){
         console.log(response.statusCode)

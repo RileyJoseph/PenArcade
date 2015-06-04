@@ -71,7 +71,20 @@ var quickExercises = [
 "Who is James? How tall is he? Why is he alone?",
 "Who killed Ranger Grey? Where did he die? How?",
 "What did Jack find down by the river? How did he know it would be there?",
-""
+"Jenny slammed the door in Matt’s face because …",
+"The plane crashed because…",
+"Paul read his wife’s diary and discovered...",
+"Victoria pulled at the window but she was trapped. Now she had no escape from..",
+"Patrick looked over the bridge and...",
+"Stacey wept because...",
+"Jack and Maureen took their first steps towards...",
+"Rodney looked down the...",
+"The sun went in and Maureen went...",
+"The small girl ran away from...",
+"Travis had never seen a..._____....look so scared before...",
+"It was time for...",
+"Her arms ached but she couldn’t stop swimming because...",
+"Ben climbed the tree and..."
 ]
 
 var abstractExercises = [

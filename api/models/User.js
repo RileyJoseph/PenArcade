@@ -27,6 +27,7 @@ module.exports = {
       required: true
     },
 
+
     fullName: function(){
       return this.firstname+' '+this.lastName;
     },
