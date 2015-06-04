@@ -16,9 +16,17 @@ module.exports = {
    * Set the default database connection for models in the development       *
    * environment (see config/connections.js and config/models.js )           *
    ***************************************************************************/
-
-  // models: {
-  //   connection: 'someMongodbServer'
-  // }
+  connections:{
+    devMongoDbServer: {
+      adapter: 'sails-mongo',
+      host: 'localhost',
+      port: 27017,
+      database: 'PenArcadeApp'
+    }
+  },
+  models: {
+    connection: 'devMongoDbServer',
+    migrate: 'alter'
+  }
 
 };
