@@ -38,6 +38,12 @@ a.navbar-brand{
   font-size: 28px;
 }
 
+/*.newBrand{
+    font-family: 'Lobster Two', cursive;
+  color: white;
+  font-size: 28px;
+}*/
+
 .navbar-inverse .navbar-brand{
   color: white;
 }
@@ -98,6 +104,14 @@ a.navbar-brand{
 
 #wordSearch{
   width: 250px;
+}
+
+#savedTable{
+  width: 800px;
+}
+
+.searchP{
+  color: black;
 }
 
 body{

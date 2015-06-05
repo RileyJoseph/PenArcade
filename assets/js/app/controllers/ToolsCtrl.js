@@ -16,7 +16,7 @@ var prompts = [
 "Write a murder mystery that takes place on a moving train.",
 "Imagine yourself in a different century and describe an average day in your life.",
 "Which character from a book would you most like to meet and why? ",
-"Invent a monster and describe it.  Tell where it lives, what it eats, and what it does.",
+"Invent a monster and describe it. Tell where it lives, what it eats, and what it does.",
 "Write about what you didn't do this weekend.",
 "Think about an incident that happened to you and exaggerate in the telling. Make it into a tall tale.",
 "Write about a time you performed in front of an audience, or how and when you'd like to.",
