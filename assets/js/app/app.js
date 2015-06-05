@@ -4,6 +4,7 @@ WritersApp.run(['$rootScope','UserService',function($rootScope,UserService){
 
   console.log('PenArcade is up and running')
 
+
 }]);
 
 WritersApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider){
@@ -51,7 +52,11 @@ WritersApp.config(['$routeProvider','$locationProvider',function($routeProvider,
     })
     .when('/saved', {
       templateUrl: '/views/saved/index.html',
-      controller:  'HomeCtrl'
+      controller:  'SavedCtrl'
+    })
+    .when('/saved/:id',{
+      templateUrl: '/views/saved/show.html',
+      controller: 'SavedCtrl'
     })
 }]);
 

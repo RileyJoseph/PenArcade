@@ -10,10 +10,12 @@
       </thead>
       <tbody>
         <tr ng-repeat="item in yourSaved">
-<!--           <div ng-if="'{{currentUser.id}}'=='{{item.user}}'"> -->
             <td>{{item.title}}</td>
             <td>{{item.body}}</td>
-    <!--       </div> -->
+            <td>
+              <button ng-click="deleteSaved(item.id)" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>
+              <button ng-click="showSaved(item.id)" class="btn btn-info btn-xs glyphicon glyphicon-eye-open"></button>
+            </td>
         </tr>
       </tbody>
     </table>

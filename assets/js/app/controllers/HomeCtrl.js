@@ -1,13 +1,26 @@
-WritersApp.controller('HomeCtrl',['$scope','$resource','$rootScope','$interval',function($scope,$resource,$rootScope,$interval){
+WritersApp.controller('HomeCtrl',['$scope','$resource','$rootScope','$interval','UserService','$modal',function($scope,$resource,$rootScope,$interval,UserService,$modal){
 
-
-  // $rootScope.loading = true
+  $scope.UserService = UserService;
+  $scope.$watchCollection('UserService',function(){
+  $scope.currentUser = UserService.currentUser;
+  });
 
   console.log('home ctrl loaded!! woah!')
 
 angular.module('ui.bootstrap').controller('HomeCtrl', function ($scope) {
   $scope.isCollapsed = false;
 });
+
+  $scope.showLogin = function(){
+    // alert("download postman dick")
+    $modal.open({
+      templateUrl: '/views/auth/loginModal.html',
+      controller: 'AuthLoginModalCtrl'
+    })
+  };
+
+
+
 
 var quotes = [
 "Call me Ishmael. —Herman Melville, Moby-Dick (1851)",

@@ -1,0 +1,65 @@
+<div ng-controller="HomeCtrl" class="container">
+  <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Quotes</button>
+  <div collapse="isCollapsed">
+    <div class="well col-md-6 col-md-offset-3">{{quotesList}}</div>
+  </div>
+</div>
+
+        <!---  ===================== Look Up Word Feature =================== -->
+
+<div ng-controller="WordCtrl">
+  <div class="col-md-8 col-md-offset-4">
+    <div  class="input-group search-bar">
+      <form ng-submit="load()" class="navbar-form navbar-right">
+          <input ng-model="options" type="radio" value="definition">Definition
+          <input ng-model="options" type="radio" value="synonyms">Synonyms
+          <input ng-model="options" type="radio" value="antonyms">Antonyms
+          <input ng-model="options" type="radio" value="rhymes">Rhymes
+          <br>
+        <input id="wordSearch" type="text" ng-model="wordSearch" class="form-control" placeholder="Search...">
+        <button class="btn btn-primary" ng-click="load()">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <br><br><br><br>
+
+  <div class="container well">
+    <div ng-show="wordS">
+      <div ng-repeat="word in wordS">
+        <p>{{word}}</p>
+      </div>
+    </div>
+    <div ng-show="wordD">
+      <div ng-repeat="word in wordD">
+        {{word}}
+      </div>
+    </div>
+    <div ng-show="wordA">
+      <div ng-repeat="word in wordA">
+        {{word}}
+      </div>
+    </div>
+    <div ng-show="wordR">
+      <div ng-repeat="word in wordR">
+        {{word}}
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!---  ===================== Free Write Area To Be Loaded =================== -->
+
+<div ng-controller="SavedCtrl" class="container col-md-12">
+
+  <form ng-submit="saved()" role="form">
+    <div class="form-group">
+      <label for="">{{date}}</label>
+      <br>
+      <textarea ng-model="body" type="text" class="form-control" id="FreeWrite"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+
+</div>
+<br><br><br>

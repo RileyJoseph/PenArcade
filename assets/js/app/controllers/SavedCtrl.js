@@ -1,4 +1,6 @@
-WritersApp.controller('SavedCtrl',['$scope','$resource','$rootScope','$http','UserService',function($scope,$resource,$rootScope,$http,UserService){
+WritersApp.controller('SavedCtrl',['$scope','$resource','$rootScope','$http','UserService','$location',function($scope,$resource,$rootScope,$http,UserService,$location){
+
+  console.log('saved controller loaded')
 
   $scope.UserService = UserService;
   $scope.$watchCollection('UserService',function(){
@@ -58,7 +60,20 @@ $http.get('/api/saved').success(function(data, status){
     //whatever you need to do if the data is not available
   });
 
+  $scope.deleteSaved = function(id){
+    $http.delete('/api/saved/'+id).success(function(err, data){
+      console.log("DELETED",data)
+    })
+  }
 
+  $scope.showSaved = function(id){
+    $location.path('/saved/'+id);
+    $http.get('/api/saved/'+id).success(function(data){
+      $scope.body = data.body
+      console.log("Getting",data)
+      console.log("populate",data.body)
+    })
+  }
 
 
 }])

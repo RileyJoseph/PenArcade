@@ -1,4 +1,4 @@
-WritersApp.controller('AuthLoginModalCtrl',['$scope','UserService','$modalInstance','$http',function($scope,UserService,$modalInstance,$http){
+WritersApp.controller('AuthLoginModalCtrl',['$scope','UserService','$modalInstance','$http','$location',function($scope,UserService,$modalInstance,$http,$location){
 
   console.log('AuthLoginModalCtrl loaded!! woah!', UserService)
 
@@ -10,6 +10,7 @@ $scope.login = function(){
       console.log(err);
     }else if(data && data.result){
       $modalInstance.close()
+      $location.url("/")
     }else {
       console.log(data);
       alert('unable to log in');

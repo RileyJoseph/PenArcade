@@ -6,6 +6,11 @@ body{
   padding-top: 10vh
 }
 
+#spaceOut{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 #snowflakeParagraph{
   height: 120px;
 }
@@ -18,6 +23,13 @@ body{
 .navbar{
   background-color: rgba(78,59,91,.4);
   border-bottom: 4px solid #2d1b4d;
+}
+
+.btn-info{
+  background-color: rgba(91,192,222,.4)
+}
+.btn-primary{
+  background-color: rgba(51,122,183,.4)
 }
 
 #wordSearch{
