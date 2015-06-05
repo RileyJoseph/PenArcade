@@ -8,40 +8,59 @@
     <div class="well col-md-6 col-md-offset-3">{{quotesList}}</div>
   </div>
 </div>
-<br>
-<br>
 
 
-        <!---  ============== Look Up Word Feature ============= -->
-<div class="col-md-6 col-md-offset-3">
-  <div ng-controller="WordCtrl" class="input-group search-bar">
-    <form ng-submit="load()" class="navbar-form navbar-right">
-      <input type="text" ng-model="wordSearch" class="form-control" placeholder="Search...">
-      <div dropdown dropdown-append-to-body>
-        <button type="button" class="btn btn-info dropdown-toggle" dropdown-toggle>
-          Look Up Word<span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Definition</a></li>
-          <li><a href="#">Synonyms</a></li>
-          <li><a href="#">Antonyms</a></li>
-          <li><a href="#">Rhymes</a></li>
-        </ul>
+
+        <!---  ===================== Look Up Word Feature =================== -->
+
+<div ng-controller="WordCtrl">
+  <div class="col-md-8 col-md-offset-4">
+    <div  class="input-group search-bar">
+      <form ng-submit="load()" class="navbar-form navbar-right">
+          <input ng-model="options" type="radio" value="definition">Definition
+          <input ng-model="options" type="radio" value="synonyms">Synonyms
+          <input ng-model="options" type="radio" value="antonyms">Antonyms
+          <input ng-model="options" type="radio" value="rhymes">Rhymes
+          <br>
+        <input id="wordSearch" type="text" ng-model="wordSearch" class="form-control" placeholder="Search...">
+        <button class="btn btn-primary" ng-click="load()">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <br><br><br><br>
+
+  <div class="container well">
+    <div ng-show="wordS">
+      <div ng-repeat="word in wordS">
+        <p>{{word}}</p>
       </div>
-    </form>
+    </div>
+    <div ng-show="wordD">
+      <div ng-repeat="word in wordD">
+        {{word}}
+      </div>
+    </div>
+    <div ng-show="wordA">
+      <div ng-repeat="word in wordA">
+        {{word}}
+      </div>
+    </div>
+    <div ng-show="wordR">
+      <div ng-repeat="word in wordR">
+        {{word}}
+      </div>
+    </div>
   </div>
 </div>
-<br><br><br><br><br><br>
-<div ng-controller="WordCtrl" class="container well">
-  {{data}}
-  Hello
-</div>
+
+        <!---  ===================== Free Write Area To Be Saved =================== -->
 
 <div ng-controller="SavedCtrl" class="container col-md-12">
 
   <form ng-submit="saved()" role="form">
     <div class="form-group">
-      <label for="">Date</label>
+      <label for="">{{date}}</label>
       <!-- <input type="text" class="form-control" placeholder="title (optional)"> -->
       <br>
       <textarea ng-model="body" type="text" class="form-control" id="FreeWrite" placeholder="All of this happened, more or less.."></textarea>

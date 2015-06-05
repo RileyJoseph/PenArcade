@@ -1,8 +1,14 @@
 <div id="splash" class="container">
   <div class="intro-text" align="center">
-    <a class="btn btn-info" href="/write">Free Write</a>
-    <a class="btn btn-info" href="/kickStart">Kick-Start</a>
-    <a class="btn btn-info" href="/saved">Saved</a>
+    <p>
+    Welcome to the Pen Arcade, a private, online journal and development space for writers.<br>
+    Whether you're just beginning or you're a veteran writer, Pen Arcade is designed to enable your
+    desire to create.
+
+    </p>
+    <a ng-show="currentUser" class="btn btn-info" href="/write">Free Write</a>
+    <a ng-show="currentUser" class="btn btn-info" href="/kickStart">Kick-Start</a>
+    <a ng-show="currentUser" class="btn btn-info" href="/saved">Saved</a>
     <a class="btn btn-info" href="/signUp">Sign Up</a>
   </div>
 </div>

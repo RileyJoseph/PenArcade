@@ -1,6 +1,3 @@
-<div class="container col-md-12">
-  <h1>Get Started</h1>
-</div>
 
 <center>
   <p>No time to explain, start writing.</p>
@@ -21,38 +18,22 @@
         Exercises<span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Quick Exercises</a></li>
+        <li><a href="/quickExercises">Quick Exercises</a></li>
         <li><a href="/abstractExercises">Abstract Exercises</a></li>
-        <li><a href="#">Regular Exercises</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Separated link</a></li>
+        <li><a href="/responseExercises">Response Exercises</a></li>
       </ul>
     </div>
 
-    <div class="btn-group" dropdown dropdown-append-to-body>
-      <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle>
-        Styles<span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Poetry</a></li>
-        <li><a href="#">Snowflake</a></li>
-        <li><a href="#">Something else here</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Separated link</a></li>
-      </ul>
-    </div>
+  <a class="btn btn-primary" href="/snowflake">Snowflake</a>
+
 </div>
-<div class="container col-md-12">
+<div ng-controller="SavedCtrl" class="container col-md-12">
+  <form ng-submit="saved()" role="form">
+    <div class="form-group">
+      <label for="">{{date}}</label>
+      <textarea ng-model="body" type="text" class="form-control" id="FreeWrite" placeholder="All of this happened more or less.."></textarea>
+    </div>
 
-<form action="" method="POST" role="form">
-  <div class="form-group">
-    <label for="">Date</label>
-    <textarea type="text" class="form-control" id="FreeWrite" placeholder="All of this happened more or less.."></textarea>
-  </div>
-
-  <button type="submit" class="btn btn-primary">Save</button>
-</form>
-
-
-
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
 </div>

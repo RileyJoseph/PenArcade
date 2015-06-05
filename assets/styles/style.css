@@ -6,18 +6,31 @@ body{
   padding-top: 10vh
 }
 
-
+#snowflakeParagraph{
+  height: 120px;
+}
+#onePage{
+  height: 250px;
+}
+#twoPage{
+  height: 500px;
+}
 .navbar{
-  border-bottom: 4px solid #10a1ff;
+  background-color: rgba(78,59,91,.4);
+  border-bottom: 4px solid #2d1b4d;
+}
+
+#wordSearch{
+  width: 250px;
 }
 
 body{
   background-color: #f0f0f0;
-/*  background-image: url(../images/Typewriter2.jpg);
+  background-image: url(../images/background.jpg);
   height: vh100;
   background-position: top center;
   background-repeat: none;
-  background-size: cover;*/
+  background-size: cover;
 }
 /*
 #btn{

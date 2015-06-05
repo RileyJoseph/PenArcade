@@ -41,11 +41,17 @@ WritersApp.config(['$routeProvider','$locationProvider',function($routeProvider,
       templateUrl: '/views/kickStart/prompts.html',
       controller:  'ToolsCtrl'
     })
+    .when('/responseExercises', {
+      templateUrl: '/views/kickStart/responseExercises.html',
+      controller:  'ToolsCtrl'
+    })
+    .when('/snowflake', {
+      templateUrl: '/views/kickStart/snowflake.html',
+      controller:  'ToolsCtrl'
+    })
     .when('/saved', {
       templateUrl: '/views/saved/index.html',
       controller:  'HomeCtrl'
     })
-
-
 }]);
 

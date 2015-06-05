@@ -1,0 +1,38 @@
+<center>
+  <p>Read the following and write an emotional response to it.</p>
+</center>
+
+<div class="well col-md-8 col-md-offset-2" align="center">
+  <p>{{responseExercises2}}</p>
+</div>
+
+<div class="col-md-2 col-md-offset-8">
+  <button class="btn btn-info" ng-click="nextResponseExercise()">New</button>
+</div>
+
+<div class="col-md-8 col-md-offset-2" align="center">
+  <a class="btn btn-primary" href="/prompts">Prompts</a>
+  <div class="btn-group" dropdown dropdown-append-to-body>
+      <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle>
+        Exercises<span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="/quickExercises">Quick Exercises</a></li>
+        <li><a href="/abstractExercises">Abstract Exercises</a></li>
+        <li><a href="/responseExercises">Response Exercises</a></li>
+      </ul>
+    </div>
+
+  <a class="btn btn-primary" href="/snowflake">Snowflake</a>
+
+</div>
+<div ng-controller="SavedCtrl" class="container col-md-12">
+  <form ng-submit="saved()" role="form">
+    <div class="form-group">
+      <label for="">{{date}}</label>
+      <textarea ng-model="body" type="text" class="form-control" id="FreeWrite" placeholder="All of this happened more or less.."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>

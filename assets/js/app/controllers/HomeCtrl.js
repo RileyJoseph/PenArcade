@@ -66,6 +66,7 @@ var quotes = [
 var loop2 = function(){
   $scope.quotesList = quotes[Math.floor(Math.random() * quotes.length)];
 }
+$scope.quotesList = quotes[Math.floor(Math.random() * quotes.length)]
 var myInt = $interval(loop2,20000)
 
 

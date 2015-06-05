@@ -9,8 +9,10 @@ var request = require('request')
 
 module.exports = {
   index:function(req,res){
+  console.log("HERHERHERHEHREHR",req.body)
+  var options = "";
   request({
-      url:'https://wordsapiv1.p.mashape.com/words/' + req.query.word + '/definition',
+      url:'https://wordsapiv1.p.mashape.com/words/' + req.query.word + "/" + req.query.options,
       headers: {
         "X-Mashape-Key": process.env.API_KEY
       }

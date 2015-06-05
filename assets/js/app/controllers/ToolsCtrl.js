@@ -2,6 +2,12 @@ WritersApp.controller('ToolsCtrl',['$scope','$resource','$rootScope','$interval'
 
 
   console.log('tools ctrl loaded!! woah!')
+  var date = new Date();
+  var dd = date.getDate();
+  var mm = date.getMonth()+1; //January is 0!
+  var yyyy = date.getFullYear();
+  $scope.date = mm+"/"+dd+"/"+yyyy
+
 
 
 var prompts = [
@@ -119,6 +125,44 @@ var abstractExercises = [
 ]
 
 
+
+// var emilyDickinson =
+// "Around a pile of mountains,
+// And, supercilious, peer
+// In shanties by the sides of roads;
+// And then a quarry pare
+
+// To fit its sides, and crawl between,
+// Complaining all the while
+// In horrid, hooting stanza;
+// Then chase itself down hill
+
+// And neigh like Boanerges;
+// Then, punctual as a star,
+// Stop--docile and omnipotent--
+// At its own stable door.
+// ---Emily Dickinson"
+
+// var elizibethBrowning =
+// "How do I love thee? Let me count the ways.
+// I love thee to the depth and breadth and height
+// My soul can reach, when feeling out of sight
+// For the ends of Being and ideal Grace.
+
+// I love thee to the level of everyday's
+// Most quiet need, by sun and candlelight.
+// I love thee freely, as men strive for Right;
+// I love thee purely, as they turn from Praise.
+
+// I love thee with the passion put to use
+// In my old griefs, and with my childhood's faith.
+// I love thee with a love I seemed to lose
+// With my lost saints, I love thee with the breath,
+// Smiles, tears, of all my life! and, if God choose,
+// I shall but love thee better after death."
+
+var response = ""
+
 $scope.nextQuickExercise = function(){
   $scope.quickSelect()
 };
@@ -140,9 +184,17 @@ $scope.promptSelect = function(){
   $scope.prompts2 = prompts[Math.floor(Math.random() * prompts.length)]
 }
 
+$scope.nextResponseExercise = function(){
+  $scope.responseSelect()
+}
+$scope.responseSelect = function(){
+  $scope.responseExercises2 = response[Math.floor(Math.random() * response.length)]
+}
+
+
 
 $scope.quickSelect();
 $scope.abstractSelect();
 $scope.promptSelect();
-
+$scope.responseSelect();
 }]);
