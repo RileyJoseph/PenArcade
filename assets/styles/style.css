@@ -1,14 +1,64 @@
 body{
   /*background-color: black;*/
 }
+a{
+  color:white;
+}
+.navbar-inverse .navbar-nav>li>a{
+  color:white;
+}
+
+p{
+  color: white;
+}
+
+th{
+  color:white;
+}
+
+li{
+  color: white;
+}
+
+#signUph3{
+  color: white;
+}
+
+.loginLabel{
+  color:white;
+}
 
 .intro-text{
   padding-top: 10vh
 }
 
+a.navbar-brand{
+  font-family: 'Lobster Two', cursive;
+  color: white;
+  font-size: 28px;
+}
+
+.navbar-inverse .navbar-brand{
+  color: white;
+}
+
 #spaceOut{
   margin-left: 100px;
   margin-right: 100px;
+}
+
+#spaceOut2{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.homeBtns{
+  margin-top:60px;
+}
+
+.form-control{
+  opacity: .6;
+  font:white;
 }
 
 #snowflakeParagraph{
@@ -30,6 +80,20 @@ body{
 }
 .btn-primary{
   background-color: rgba(51,122,183,.4)
+}
+
+#homeP{
+  font-size: 26px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#aboutP{
+  font-size: 22px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.wellP{
+  color: black;
 }
 
 #wordSearch{

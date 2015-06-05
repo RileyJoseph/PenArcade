@@ -1,14 +1,15 @@
 <div id="splash" class="container" ng-controller="HomeCtrl">
   <div class="intro-text" align="center">
-    <p ng-hide="currentUser">
+    <p id="homeP" ng-hide="currentUser">
     Welcome to the Pen Arcade, a private, online journal and development space for writers.<br>
     Whether you're just beginning or you're a veteran writer, Pen Arcade is designed to enable your
     desire to create.
     </p>
-    <a ng-show="currentUser" class="btn btn-info" href="/write">Free Write</a>
-    <a ng-show="currentUser" class="btn btn-info" id="spaceOut" href="/kickStart">Kick-Start</a>
-    <a ng-show="currentUser" class="btn btn-info" href="/saved">Saved</a>
-    <a ng-hide="currentUser" class="btn btn-info" href="/signUp">Sign Up</a>
-    <a ng-hide="currentUser" class="btn btn-info" ng-click="showLogin()">Sign In</a>
+    <a ng-show="currentUser" class="btn btn-info homeBtns" href="/write">Free Write</a>
+    <a ng-show="currentUser" class="btn btn-info homeBtns" id="spaceOut" href="/kickStart">Kick-Start</a>
+    <a ng-show="currentUser" class="btn btn-info homeBtns" href="/saved">Saved</a>
+    <a ng-hide="currentUser" class="btn btn-info homeBtns" href="/signUp">Sign Up</a>
+    <a ng-hide="currentUser" class="btn btn-info homeBtns" id="spaceOut2" ng-click="showLogin()">Sign In</a>
+    <a ng-hide="currentUser" class="btn btn-info homeBtns" href="/about">Learn More</a>
   </div>
 </div>

@@ -36,6 +36,7 @@ WritersApp.controller('SavedCtrl',['$scope','$resource','$rootScope','$http','Us
     console.log($scope.body)
     $http.post('/api/saved',savedData)
       .success(function(data){
+        $location.path('/saved');
         console.log("SAVED",data)
       }).error(function(err){
         alert("error")
@@ -70,6 +71,7 @@ $http.get('/api/saved').success(function(data, status){
     $location.path('/saved/'+id);
     $http.get('/api/saved/'+id).success(function(data){
       $scope.body = data.body
+      $scope.id=id
       console.log("Getting",data)
       console.log("populate",data.body)
     })

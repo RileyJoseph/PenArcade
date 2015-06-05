@@ -58,5 +58,9 @@ WritersApp.config(['$routeProvider','$locationProvider',function($routeProvider,
       templateUrl: '/views/saved/show.html',
       controller: 'SavedCtrl'
     })
+    .when('/about',{
+      templateUrl: '/views/about.html',
+      controller: 'HomeCtrl'
+    })
 }]);
 
