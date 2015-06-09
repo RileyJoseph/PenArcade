@@ -132,8 +132,8 @@ var abstractExercises = [
 
 
 // var emilyDickinson =
-// "Around a pile of mountains,
-// And, supercilious, peer
+// "Around a pile of mountains,"+
+// "And, supercilious, peer"
 // In shanties by the sides of roads;
 // And then a quarry pare
 
