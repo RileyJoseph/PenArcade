@@ -16,7 +16,7 @@ console.log('User Ctrl Loaded.')
 
     $http.post("/api/user",userData).success(function(data){
       $location.url("/")
-      alert("Success, log in to continue!")
+      alert("Success, sign in to continue!")
     }).error(function(err){
       alert("there has been an error.")
     })

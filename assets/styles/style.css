@@ -38,11 +38,12 @@ a.navbar-brand{
   font-size: 28px;
 }
 
-/*.newBrand{
-    font-family: 'Lobster Two', cursive;
+
+a#navBrand{
+  font-family: 'Lobster Two', cursive;
   color: white;
   font-size: 28px;
-}*/
+}
 
 .navbar-inverse .navbar-brand{
   color: white;
