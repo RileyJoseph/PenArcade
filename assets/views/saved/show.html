@@ -51,15 +51,40 @@
         <!---  ===================== Free Write Area To Be Loaded =================== -->
 
 <div ng-controller="LoadCtrl" class="container col-md-12">
-
+<div ng-controller="SavedCtrl">
   <form ng-submit="saved()" role="form">
     <div class="form-group">
       <label for="">{{date}}</label>
       <br>
       <textarea ng-model="body" class="form-control" id="FreeWrite"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Save</button>
-  </form>
+      <br>
+      <textarea ng-if="body2" ng-model="body2" type="text" class="form-control" id="snowflakeParagraph"placeholder="Summary Paragraph"></textarea>
+      <br>
+      <textarea ng-if="body2" ng-model="body3" type="text" class="form-control" placeholder="Character storyline"></textarea>
+      <br>
+      <textarea ng-if="body2" ng-model="body4" type="text" class="form-control" id="onePage" placeholder="Character's motivation"></textarea>
+      <br>
+      <textarea ng-if="body2" ng-model="body5" type="text" class="form-control" id="onePage" placeholder="Character's goal"></textarea>
+      <br>
+      <textarea ng-if="body2" ng-model="body6" type="text" class="form-control" id="onePage" placeholder="Character's conflict"></textarea>
+      <br>
+      <textarea ng-if="body2" ng-model="body7" type="text" class="form-control" id="onePage" placeholder="Character's epiphany"></textarea>
+      <br>
+      <textarea ng-if="body2" ng-model="body8" type="text" class="form-control" id="onePage" placeholder="Character storyline summary"></textarea>
+      <br>
+      <textarea ng-if="body2" ng-model="body9" type="text" class="form-control" id="onePage" placeholder="Summary Paragraph Expanded"></textarea>
+      <br>
+      <textarea ng-if="body2" ng-model="body10" type="text" class="form-control" id="onePage" placeholder="Major Characters"></textarea>
+      <br>
+      <textarea ng-if="body2" ng-model="body11" type="text" class="form-control" id="twoPage" placeholder="Plot Summary Expanded"></textarea>
+      <br>
+      <textarea ng-if="body2" ng-model="body12" type="text" class="form-control" id="onePage" placeholder="List major scenes"></textarea>
+      <br>
+      <textarea ng-if="body2" ng-model="body13" type="text" class="form-control" id="onePage" placeholder="Describe Each Scene"></textarea>
 
+    </div>
+    <button type="submit" id="saveSpace" class="btn btn-primary">Save</button>
+  </form>
+</div>
 </div>
 <br><br><br>

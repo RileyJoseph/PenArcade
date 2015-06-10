@@ -1,0 +1,78 @@
+<center>
+  <p><b>The Snowflake Method</b></p>
+  <p>Feeling ambitious?</p>
+  <p>Writing a novel? Novella? Short story? The snowflake method is designed to help you expand a single sentence into a full story.</p>
+</center>
+
+<div class="container col-md-10 col-md-offset-2">
+  <p><b>Directions:</b></p>
+  <p>1.Take your time and write a one-sentence summary of your story below. Keep it simple and concise</p>
+  <p>2.Expand your sentence into a paragraph describing the story narrative, any major events and the ending.</p>
+  <p>3.Now consider the main character and write a one page summary for each, considering the following points:</p>
+  <ol>
+    <li>A one-sentence summary of the character's storyline.</li>
+    <li>The character's motivation (what does he/she want abstractly?)</li>
+    <li>The character's goal (what does he/she want concretely?)</li>
+    <li>The character's conflict (what prevents him/her from reaching this goal?)</li>
+    <li>The character's epiphany (what will he/she learn, how will he/she change?</li>
+    <li>A one-paragraph summary of the character's storyline</li>
+  </ol>
+  <p>4.Go back to #2 and expand each sentence into a paragraph</p>
+  <p>5.Write a one page description for each major character, which tells the story from their point of view.</p>
+  <p>6.Expand your one page plot synopsis into a four page plot synopsis.</p>
+  <p>7.Using the expanded synopsis, make a list of every scene you will need to write to complete the novel.</p>
+  <p>8.Using the scene list, write a multi-paragraph narrative description of each scene.</p>
+  <p>9.Write your first draft</p>
+</div>
+
+<br>
+
+<div class="col-md-8 col-md-offset-2" align="center">
+  <a class="btn btn-primary" href="/prompts">Prompts</a>
+  <div class="btn-group" dropdown dropdown-append-to-body>
+      <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle>
+        Exercises<span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="/quickExercises">Quick Exercises</a></li>
+        <li><a href="/abstractExercises">Abstract Exercises</a></li>
+        <li><a href="/responseExercises">Response Exercises</a></li>
+      </ul>
+    </div>
+  <a class="btn btn-primary" href="/snowflake">Snowflake</a>
+</div>
+
+<div ng-controller="SavedCtrl" class="container">
+  <form ng-submit="saved()" role="form">
+    <div class="form-group">
+      <label for="">{{date}}</label>
+      <textarea ng-model="body" type="text" class="form-control" placeholder="Summary Sentence"></textarea>
+      <br>
+      <textarea ng-model="body2" type="text" class="form-control" id="snowflakeParagraph"placeholder="Summary Paragraph"></textarea>
+      <br>
+      <textarea ng-model="body3" type="text" class="form-control" placeholder="Character storyline"></textarea>
+      <br>
+      <textarea ng-model="body4" type="text" class="form-control" id="onePage" placeholder="Character's motivation"></textarea>
+      <br>
+      <textarea ng-model="body5" type="text" class="form-control" id="onePage" placeholder="Character's goal"></textarea>
+      <br>
+      <textarea ng-model="body6" type="text" class="form-control" id="onePage" placeholder="Character's conflict"></textarea>
+      <br>
+      <textarea ng-model="body7" type="text" class="form-control" id="onePage" placeholder="Character's epiphany"></textarea>
+      <br>
+      <textarea ng-model="body8" type="text" class="form-control" id="onePage" placeholder="Character storyline summary"></textarea>
+      <br>
+      <textarea ng-model="body9" type="text" class="form-control" id="onePage" placeholder="Summary Paragraph Expanded"></textarea>
+      <br>
+      <textarea ng-model="body10" type="text" class="form-control" id="onePage" placeholder="Major Characters"></textarea>
+      <br>
+      <textarea ng-model="body11" type="text" class="form-control" id="twoPage" placeholder="Plot Summary Expanded"></textarea>
+      <br>
+      <textarea ng-model="body12" type="text" class="form-control" id="onePage" placeholder="List major scenes"></textarea>
+      <br>
+      <textarea ng-model="body13" type="text" class="form-control" id="onePage" placeholder="Describe Each Scene"></textarea>
+
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>

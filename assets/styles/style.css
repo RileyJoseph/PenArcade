@@ -1,6 +1,17 @@
 body{
-  /*background-color: black;*/
+  background-color: #f0f0f0;
+  background-image: url(../images/background.jpg);
+  height: vh100;
+  background-position: top center;
+  background-repeat: none;
+  background-size: cover;
 }
+
+#FreeWrite{
+  height: 100vh;
+}
+/*----------------------Visible links and lists-------------------*/
+
 a{
   color:white;
 }
@@ -27,6 +38,12 @@ li{
 .loginLabel{
   color:white;
 }
+
+.form-control{
+  opacity: .6;
+  font:white;
+}
+/* -----------------------Splash/About/Navbar/Buttons---------------------*/
 
 .intro-text{
   padding-top: 10vh
@@ -63,20 +80,6 @@ a#navBrand{
   margin-top:60px;
 }
 
-.form-control{
-  opacity: .6;
-  font:white;
-}
-
-#snowflakeParagraph{
-  height: 120px;
-}
-#onePage{
-  height: 250px;
-}
-#twoPage{
-  height: 500px;
-}
 .navbar{
   background-color: rgba(78,59,91,.4);
   border-bottom: 4px solid #2d1b4d;
@@ -88,7 +91,6 @@ a#navBrand{
 .btn-primary{
   background-color: rgba(51,122,183,.4)
 }
-
 #homeP{
   font-size: 26px;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -98,7 +100,18 @@ a#navBrand{
   font-size: 22px;
   font-family: 'Open Sans Condensed', sans-serif;
 }
+/*----------------------------Snowflake-----------------------------*/
+#snowflakeParagraph{
+  height: 120px;
+}
+#onePage{
+  height: 250px;
+}
+#twoPage{
+  height: 500px;
+}
 
+/*----------------------------Everything else---------------------*/
 .wellP{
   color: black;
 }
@@ -111,32 +124,17 @@ a#navBrand{
   width: 800px;
 }
 
+i.fa.fa-times-circle.fa-2x {
+  color: red;
+}
+i.fa.fa-pencil-square-o.fa-2x {
+  color: #38426d;
+}
+
+#saveSpace{
+  margin-bottom: 30px;
+}
+
 .searchP{
   color: black;
-}
-
-body{
-  background-color: #f0f0f0;
-  background-image: url(../images/background.jpg);
-  height: vh100;
-  background-position: top center;
-  background-repeat: none;
-  background-size: cover;
-}
-/*
-#btn{
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 100px;
-}
-
-.btn-group{
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 100px;
-}*/
-
-
-#FreeWrite{
-  height: 100vh;
 }

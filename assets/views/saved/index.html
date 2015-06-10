@@ -13,8 +13,8 @@
             <td>{{item.title}}</td>
             <td>{{item.body}}</td>
             <td>
-              <button ng-click="deleteSaved(item.id)" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>
-              <button ng-click="showSaved(item.id)" class="btn btn-info btn-xs glyphicon glyphicon-eye-open"></button>
+              <a ng-click="deleteSaved(item.id)"><i class="fa fa-times-circle fa-2x"></i></a>
+              <a ng-click="showSaved(item.id)"><i class="fa fa-pencil-square-o fa-2x"></i></a>
             </td>
         </tr>
       </tbody>
