@@ -49,6 +49,17 @@ li{
   padding-top: 10vh
 }
 
+#splashName{
+  font-family: 'Lobster Two', cursive;
+  font-size: 70px;
+  color:white;
+}
+
+#homeP{
+  font-size: 26px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
 a.navbar-brand{
   font-family: 'Lobster Two', cursive;
   color: white;
@@ -90,10 +101,6 @@ a#navBrand{
 }
 .btn-primary{
   background-color: rgba(51,122,183,.4)
-}
-#homeP{
-  font-size: 26px;
-  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #aboutP{
