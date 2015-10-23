@@ -1,9 +1,12 @@
 body{
   background-color: #f0f0f0;
-  background-image: url(../images/background.jpg);
-  height: vh100;
-  background-position: top center;
-  background-repeat: none;
+  background: url(../images/background.jpg)no-repeat center center fixed;
+  /*height: vh100;*/
+/*  background-position: top center;
+  background-repeat: no-repeat;*/
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -82,6 +85,8 @@ a#navBrand{
   margin-right: 100px;
 }
 
+
+
 #spaceOut2{
   margin-left: 100px;
   margin-right: 100px;
@@ -94,6 +99,7 @@ a#navBrand{
 .navbar{
   background-color: rgba(78,59,91,.4);
   border-bottom: 4px solid #2d1b4d;
+  width: 100%;
 }
 
 .btn-info{
@@ -144,4 +150,22 @@ i.fa.fa-pencil-square-o.fa-2x {
 
 .searchP{
   color: black;
+}
+
+
+@media(max-width: 608px) {
+  #spaceOut{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #spaceOut2{
+   margin-left: 10px;
+   margin-right: 10px;
+  }
+
+  .homeBtns{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 }
